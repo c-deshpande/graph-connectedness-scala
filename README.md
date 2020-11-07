@@ -34,17 +34,17 @@ Project done as a part of CSE-6331 Cloud Computing Course at UTA.
 7,6
 <br>
 <br>
-<p style="text-align: justify; text-justify: inter-word;">
+<p align=justify>
 Your task is to write a Map-Reduce program that finds the connected components of any undirected graph and prints the size of these connected components. A connected component of a graph is a subgraph of the graph in which there is a path from any two vertices in the subgraph. For the above graph, there are two connected components: one 0,8,9 and another 1,2,3,4,5,6,7. Your program should print the sizes of these connected components: 3 and 7.
 </p>
 <br>
-<p style="text-align: justify; text-justify: inter-word;">
+<p align=justify>
 The following pseudo-code finds the connected components. It assigns a unique group number to each vertex (we are using the vertex ID as the group number), and for each graph edge between Vi and Vj, it changes the group number of these vertices to the minimum group number of Vi and Vj. That way, vertices connected together will eventually get the same minimum group number, which is the minimum vertex ID among all vertices in the connected component. First you need a class to represent a vertex:
 </p>
 
-<p>Re-implementing Project #3 (Graph Processing) as described above using Spark and Scala without using Map-Reduce. That is, the program finds the connected components of any undirected graph and prints the size of these connected components. A connected component of a graph is a subgraph of the graph in which there is a path from any two vertices in the subgraph.</p>
+<p align=justify>Re-implementing Project #3 (Graph Processing) as described above using Spark and Scala without using Map-Reduce. That is, the program finds the connected components of any undirected graph and prints the size of these connected components. A connected component of a graph is a subgraph of the graph in which there is a path from any two vertices in the subgraph.</p>
 
-<p>The graph can be represented as RDD[ ( Long, Long, List[Long] ) ], where the first Long is the graph node ID, the second Long is the group that this vertex belongs to (initially, equal to the node ID), and the List[Long] is the adjacent list (the IDs of the neighbors).</p>
+<p align=justify>The graph can be represented as RDD[ ( Long, Long, List[Long] ) ], where the first Long is the graph node ID, the second Long is the group that this vertex belongs to (initially, equal to the node ID), and the List[Long] is the adjacent list (the IDs of the neighbors).</p>
 
 <p>The psuedo-code:</p>
 
@@ -59,4 +59,4 @@ for (i <- 1 to 5)
 
 /* finally, print the group sizes */
 ```
-<p>For example, for the node (20,6,List(22,23,24)), the flatMap must return the sequence Seq((20,6),(22,6),(23,6),(24,6)). The output (group sizes) must be sent to the output, not to a file.</p>
+<p align=justify>For example, for the node (20,6,List(22,23,24)), the flatMap must return the sequence Seq((20,6),(22,6),(23,6),(24,6)). The output (group sizes) must be sent to the output, not to a file.</p>
