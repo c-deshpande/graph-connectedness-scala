@@ -8,7 +8,7 @@ Project done as a part of CSE-6331 Cloud Computing Course at UTA.
 <p>An undirected graph is represented in the input text file using one line per graph vertex. For example, the line</p>
 
 <p>1,2,3,4,5,6,7</p>
-</p>represents the vertex with ID 1, which is connected to the vertices with IDs 2, 3, 4, 5, 6, and 7. For example, the following graph:</p>
+<p>represents the vertex with ID 1, which is connected to the vertices with IDs 2, 3, 4, 5, 6, and 7. For example, the following graph:</p>
 
 <img src="https://raw.githubusercontent.com/c-deshpande/graph-connectedness/master/img/p2.png"/>
 
